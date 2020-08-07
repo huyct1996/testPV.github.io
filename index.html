@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- FONTAWESOME -->
+        <script src="https://kit.fontawesome.com/c5a536b751.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <div class="search-toggle"><i class="fas fa-search"></i></div>
+            <div class="logo">
+                <h4 class="text-capitalize font-weight-bold">City !</h4>
+            </div>
+            <div class="search">
+                <div class="search-box">
+                    <input type="text" width="30px" placeholder="¿Qué quieres encontrar hoy?">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="login">
+                <button class="btn-login"><i class="fas fa-user"></i></button>
+            </div>
+        </header>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- SCRIPT -->
+        <script>
+            $(document).ready(function() {
+                $('.search-toggle').click(function() {
+                    $('.search').toggleClass('active');
+                })
+            })
+        </script>
+    </body>
+</html>
