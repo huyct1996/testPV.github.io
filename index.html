@@ -31,6 +31,96 @@
                 <button class="btn-login"><i class="fas fa-user"></i></button>
             </div>
         </header>
+
+        <nav>
+            <ul>
+                <li class="highlight sub-menu">
+                    <a href="#" >WoOw</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="highlight sub-menu">
+                    <a href="#">City!</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="highlight sub-menu">
+                    <a href="#">Shop!</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="highlight sub-menu">
+                    <a href="#">Travel!</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Gastronomia</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Estestica Y Bienestar</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Peluqueria</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Cartelera</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Tiempo Libre</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Autos</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu">
+                    <a href="#">Más Servicios</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <!-- Bootstrap JavaScript -->
@@ -40,8 +130,17 @@
             $(document).ready(function() {
                 $('.search-toggle').click(function() {
                     $('.search').toggleClass('active');
-                })
-            })
+                    $('nav').removeClass('active');
+                });
+                $('.menu-toggle').click(function() {
+                    $('nav').toggleClass('active');
+                    $('.search').removeClass('active');
+                });
+                $('ul li').click(function() {
+                    $(this).siblings().removeClass('active');
+                    $(this).toggleClass('active');
+                });
+            });
         </script>
     </body>
 </html>

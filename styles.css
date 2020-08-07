@@ -70,7 +70,7 @@ header .search .search-box .btn-search:hover {
 
 header .login {
     float: left;
-    padding-right: 70px;
+    padding-right: 30px;
     width: 20%;
     text-align: right;
     margin-top: 10px;
@@ -97,22 +97,96 @@ header .search-toggle {
     display: none;
 }
 
-
-/* MEDIA QUERY */
-@media (max-width: 992px) {
-
+/* NAV */
+nav {
+    float: left;
+    background: rgb(138, 19, 34);
+    width: 100%;
 }
 
-@media (max-width: 768px) {
-    .header {
-        display: flex;
-    }
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 80px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 16px 0 5px;
+    color: #fff;
+    display: block;
+}
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: rgb(138, 19, 34);
+    text-decoration: none;
+    background: #fff;
+}
+
+nav ul li.highlight {
+    background: rgb(93, 15, 25);
+}
+
+/* SUB-MENU */
+nav ul li {
+    position: relative;
+}
+
+nav ul li.active {
+    background: rgb(54, 1, 8);
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: rgb(138, 19, 34);
+    display: none;
+    margin: 0;
+}
+
+nav ul li.active ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    width: 200px;
+}
+
+nav ul li.sub-menu:before {
+    content: '\f0d7';
+    font-family: fontAwesome;
+    color: #fff;
+    position: absolute;
+    line-height: 30px;
+    right: 0;
+    font-size: 11px;
+    padding-right: 1px;
+}
+
+nav ul li:hover.sub-menu:before {
+    content: '\f0d8';
+    font-family: fontAwesome;
+    color: rgb(138, 19, 34);
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 1200px) {
     header .menu-toggle {
         float: left;
         color: #fff;
         margin-top: 10px;
         font-size: 25px;
-        width: 5%;
         display: block;
         text-align: right;
         margin-right: 10px;
@@ -120,6 +194,74 @@ header .search-toggle {
         cursor: pointer;
     }
 
+    header .logo {
+        padding: 0;
+    }
+
+    header .search {
+        width: 60%;
+    }
+
+    header .login {
+        width: 10%;
+    }
+
+    /* NAV */
+    nav {
+        position: absolute;
+        background: rgb(138, 19, 34);
+        width: 280px;
+        max-width: 70%;
+        top: 60px;
+        height: 100vh;
+        left: -100%;
+        transition: .5s;
+    }
+    
+    nav ul {
+        display: block;
+        margin: 0;
+        transition: .5s;
+    }
+
+    nav ul li a {
+        height: 50px;
+        padding: 5px 20px;
+    }
+
+    nav.active {
+        left: 0;
+    }
+    /* SUB-MENU */
+    nav ul li ul {
+        position: relative;
+        display: none;
+    }
+
+    nav ul li ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li.sub-menu:before {
+        line-height: 40px;
+        right: 10;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    nav ul li:hover.sub-menu:before {
+        content: '\f0d8';
+        font-family: fontAwesome;
+        color: rgb(138, 19, 34);
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
     header .search-toggle {
         display: block;
         float: left;
@@ -170,7 +312,6 @@ header .search-toggle {
     header .login {
         width: 10%;
         float: right;
-        padding-right: 30px;
         text-align: center;
     }
 }
