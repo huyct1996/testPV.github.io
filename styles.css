@@ -421,7 +421,10 @@ nav ul li:hover.sub-menu:before {
 }
 
 @media (max-width: 576px) {
-
+    /* DETAIL SEARCH */
+    .detail-search .content {
+        top: 71%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -437,9 +440,8 @@ nav ul li:hover.sub-menu:before {
         width: 5%;
     }
 
-    /* DETAIL SEARCH */
-    .detail-search .content {
-        top: 71%;
+    .detail-search {
+        display: none;
     }
 }
 
