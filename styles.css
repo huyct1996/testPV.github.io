@@ -206,7 +206,7 @@ nav ul li:hover.sub-menu:before {
     top: 55%;
     left: 38%;
     transform: translate(-38%, -50%);
-    width: 46%;
+    width: 51%;
 }
 
 .detail-search .content label {
@@ -436,8 +436,14 @@ nav ul li:hover.sub-menu:before {
 }
 
 @media (max-width: 576px) {
-    .detail-search {
-        display: none;
+    /* DETAIL SEARCH */
+    .detail-search .content {
+        top: 12%;
+        left: 34%;
+        width: 61%;
+    }
+    .detail-search .btn-detail-search {
+        top: 56px;
     }
 }
 
@@ -452,6 +458,10 @@ nav ul li:hover.sub-menu:before {
     
     header .login {
         width: 5%;
+    }
+
+    .detail-search {
+        display: none;
     }
 }
 
