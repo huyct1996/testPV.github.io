@@ -498,7 +498,10 @@ nav ul li:hover.sub-menu:before {
 }
 
 @media (max-width: 992px) {
-    
+    .products .card .img-overlay .overlay-product .text {
+        top: 70%;
+        left: 47%;
+    }
 }
 
 @media (max-width: 851px) {
