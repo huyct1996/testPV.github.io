@@ -244,6 +244,9 @@ nav ul li:hover.sub-menu:before {
     top: 57%;
     left: 104%;
     transform: translate(0%, -21%);
+    box-shadow: 0px 2px 0px rgb(106, 20, 21);
+    border: 0;
+    outline: none;
 }
 
 .detail-search .btn-detail-search:hover {
@@ -324,8 +327,6 @@ nav ul li:hover.sub-menu:before {
 }
 
 /* PRODUCTS */
-
-
 .products .products-title {
     margin-top: 50px;
     width: 100%;
@@ -379,6 +380,8 @@ nav ul li:hover.sub-menu:before {
     color: #fff;
     width: 130px;
     box-shadow: 0px 2px 0px rgb(106, 20, 21);
+    border: 0;
+    outline: none;
 }
 
 .products a.carousel-control-prev.prd-prev {
@@ -396,6 +399,43 @@ nav ul li:hover.sub-menu:before {
     right: -35px;
     top: -30px;
 }
+
+/* HIGHLIGHT PRODUCTS */
+.highlight-products {
+    margin-top: 50px;
+}
+
+.highlight-products .highlight-title {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.highlight-products .highlight-title > p {
+    margin-top: 5px;
+}
+
+.highlight-products .highlight-title > img {
+    margin-right: 10px;
+    height: 35px;
+    width: 37px;
+}
+
+.highlight-products .highlight-text {
+    margin-bottom: 10px;
+}
+
+.highlight-products .highlight-price p:nth-child(1) span {
+    padding: 0px 11px;
+    background: rgb(211, 12, 15);
+    margin-right: 8px;
+    border-radius: 11px;
+    color: #fff;
+}
+
+.highlight-products .highlight-price p:nth-child(2) span {
+    font-size: 20px;
+    font-weight: bold;
+} 
 
 /* MEDIA QUERY */
 @media (min-width: 1250px) {
