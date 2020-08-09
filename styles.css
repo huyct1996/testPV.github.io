@@ -385,7 +385,7 @@ nav ul li:hover.sub-menu:before {
     width: auto;
     color: black;
     font-size: 40px;
-    left: -50px;
+    left: -35px;
     top: -30px;
 }
 
@@ -393,7 +393,7 @@ nav ul li:hover.sub-menu:before {
     width: auto;
     color: black;
     font-size: 40px;
-    right: -50px;
+    right: -35px;
     top: -30px;
 }
 
@@ -484,6 +484,17 @@ nav ul li:hover.sub-menu:before {
     .detail-search {
         margin-top: 0;
     }
+
+    /* PRODUCTS */
+    .products a.carousel-control-prev.prd-prev {
+        left: -26px;
+        font-size: 35px;
+    }
+    
+    .products a.carousel-control-next.prd-next {
+        right: -26px;
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -550,6 +561,9 @@ nav ul li:hover.sub-menu:before {
 
     header .search .search-box input {
         padding: 10px;
+    }
+    header .search .search-box .btn-search {
+        border-radius: 0;
     }
     
     header .login {
