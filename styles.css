@@ -599,6 +599,21 @@ nav ul li:hover.sub-menu:before {
     .item6 { grid-area: item6; min-height: 150px; }
     .item7 { grid-area: item7; min-height: 150px; }
     .item8 { grid-area: item8; min-height: 150px; }
+
+    /* PRODUCTS */
+    .products .card .img-overlay .overlay-product .text {
+        top: 84%;
+        left: 50%;
+    }
+    .products a.carousel-control-next.prd-next {
+        right: 0;
+        color: #fff;
+    }
+
+    .products a.carousel-control-prev.prd-prev {
+        left: 0;
+        color: #fff;
+    }
 }
 
 @media (max-width: 576px) {
